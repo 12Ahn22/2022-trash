@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
+import MainChart from './components/chart.js/MainChart';
 import { getTakeAction } from './redux/_take';
 
 function App() {
@@ -13,7 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={onClickHandler}>액션 실행</button>
+      <h1>Main Page</h1>
+      {/* <button onClick={onClickHandler}>액션 실행</button> */}
+
+      {/* chart.js */}
+      <MainChart />
     </div>
   );
 }
